@@ -59,12 +59,28 @@ p {
 .gift-hint {
     margin-top: 0;
 }
-
+@keyframes rainbow {
+    0% {
+        border: solid 6px red;
+    }
+    25% {
+        border: solid 6px green;
+    }
+    50% {
+        border: solid 6px yellow;
+    }
+    75% {
+        border: solid 6px blue;
+    }
+    100% {
+        border: solid 6px magenta;
+    }
+}
 .gift-img {
     margin: 20px auto;
     max-width: 500px;
     height: 500px;
-    border: 6px solid white;
+    animation: rainbow 4s infinite both;
     border-radius: 10px;
     background-image: url("gift-img.jpg");
     background-size: cover;
